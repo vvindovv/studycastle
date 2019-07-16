@@ -1,8 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render 
 
-# Create your views here.
-from django.shortcuts import render
-import scapp.views
 # Create your views here.
 
 def index(request):
