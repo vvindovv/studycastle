@@ -19,9 +19,9 @@ import scapp.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/',scapp.views.index, name="home"),
+    path('',scapp.views.index, name="home"),
     path('blog/',scapp.views.blog, name="blog"),
     path('contact/',scapp.views.contact, name="contact"),
-    path('services/',scapp.views.services, name="services.html"),
+    path('services/',scapp.views.services, name="services"),
     path('blog-single/',scapp.views.blogsingle, name="blogsingle"),
 ]

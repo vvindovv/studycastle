@@ -4,19 +4,31 @@
     margin: 0 auto;
     overflow: visible;
     }
-    .inside-container {
+    
+.inside-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
     width: 100%;
     }
-    .row-spc{
+
+.inside-container-1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+.row-spc{
     margin: 0 auto!important;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+          font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     
     }
-    i:hover{
+
+i:hover{
         color: #31BA45;
         cursor: pointer;
     }
@@ -67,7 +79,9 @@
     }
     .nav-list .menu {
         color: #333333;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: bold;
         font-size: 20px;
         line-height: 10px;
         padding: 0 20px;
@@ -174,22 +188,24 @@
         }
     }
     .carousel-text h1 {
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         font-size: 42px;
         text-transform: uppercase;
         text-align: center;
         color: #ffffff;
         font-weight: bold;
-        text-shadow: 3px 3px 5px #000;
+        text-shadow: none;
     }
     .carousel-text span {
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         font-size: 42px;
         text-transform: uppercase;
         text-align: center;
         color: #ffffff;
         font-weight: bold;
-        text-shadow: 3px 3px 5px #000;
+        text-shadow: none;
     }
     .carousel-text{
     
@@ -197,11 +213,12 @@
         text-align: center;
     }
     .carousel-text p {
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         padding-top:40px;
         font-size: 14px;
         color: #ffffff;
-        text-shadow: 3px 3px 5px #000;
+        text-shadow: none;
     
     }
     .butns{
@@ -210,13 +227,14 @@
     .about-btn{  
         color: #333333;
         border-radius: 8px;
-         margin: 20px;
-         padding: 15px 40px;
+        margin: 20px;
+        padding: 15px 40px;
         background-color: #9fd7ef;
         text-transform: uppercase;
         text-decoration: none;
         font-size: 12px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         font-weight: bolder;
         border: none;
     
@@ -238,7 +256,8 @@
         text-transform: uppercase;
         text-decoration: none;
         font-size: 12px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         font-weight: bolder;
         color: #333333;
         border: none;
@@ -259,7 +278,7 @@
         font-size: 32px;
         font-weight: bold;
         text-align: center;
-        font-family: 'Roboto Slab', serif;
+        
         margin-top: 140px;
     }
     .our-header hr{
@@ -288,7 +307,7 @@
     .our-spec h3 {
         font-size: 16px;
         text-align: center;
-        font-family: 'Roboto Slab', serif;
+        
         font-weight: bold;
         margin-bottom: 25px;
         max-height:19px;
@@ -297,7 +316,8 @@
         color: #777777;
         font-size: 14px;
         text-align: center;
-        font-family: 'Black Han Sans', sans-serif; 
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif; 
         min-height: 84px;
     }
     .our-spec i{
@@ -327,7 +347,8 @@
         color: white;
         text-align: center;
         font-size: 13px;
-        font-family: 'Black Han Sans', sans-serif;  
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;  
         border-radius: 6px;
         border: none;
     }
@@ -356,7 +377,8 @@
     .overlay span{
         text-align: center;
         font-size: 14px;
-        font-family: 'Black Han Sans', sans-serif;  
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;  
         color: white;
         padding-top: 10px;
         padding-bottom: 20px;
@@ -366,7 +388,8 @@
         font-weight: bold;
         background-color: white;
         font-size: 13px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         border: none;
         border-radius: 5px;
         padding: 10px 15px;
@@ -431,12 +454,14 @@
     .product-text span{
          text-align: center;
          font-size: 16px;
-         font-family: 'Black Han Sans', sans-serif;
+         font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
     }
      .product-text p{
         text-align: center;
         font-size: 16px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         color: #31BA45;
         font-weight: bold;
     }
@@ -464,7 +489,8 @@
     .capa{
          font-size: 32px;
          font-weight: bold;
-         font-family: 'Black Han Sans', sans-serif;
+         font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
          color: #9fd7ef;
     
      }
@@ -476,7 +502,8 @@
     
         font-size: 32px;
         font-weight: bold;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         color: #31BA45;
      }
      .vr-line{
@@ -497,7 +524,8 @@
           text-decoration: none;
           color: #777777;
           font-size: 15px;
-          font-family: 'Black Han Sans', sans-serif;
+          font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
           background-color: #ffffff;
           border: none;
       }
@@ -597,6 +625,7 @@
         background-image: url('../image/max-image/post-card-10.jpg');
      background-size: cover;
     }
+
     .padd-col{
         margin: auto;
     }
@@ -622,7 +651,8 @@
     }
     .col-overlay p{
         font-size: 14px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
     }
     
     .col-over:hover .col-overlay{
@@ -714,7 +744,8 @@
         overflow: hidden;
         margin:auto;
     }
-    .over-image{
+    .over-image
+    {
         z-index: 999;
         width: 100%;
         height: 100%;
@@ -722,9 +753,16 @@
         
         
     }
+
+    .navbardrop
+    {
+        color: #000;
+    }
+
     .over-image span{
     font-size:16px;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     position: absolute;
     background-color: transparent;
     color: #fff;
@@ -783,7 +821,8 @@
         left: 35%;
         color: #9fd7ef;
         font-size: 15px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         font-weight: bold;
         opacity: 0;
         transition-timing-function: ease-in-out;
@@ -809,7 +848,7 @@
       
     }
     .contact-bg{
-        background-image: url('../image/image/background.jpg');
+        background-image: url('../image/background.jpg');
         background-repeat: no-repeat;
         background-size:cover;
     }
@@ -833,13 +872,15 @@
         padding: 25px 0;
         font-size: 14px;
         font-weight: bold;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         color: #777777;
     }
     .contact-con h2 {
         font-size: 32px;
         font-weight: bold;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         text-transform: uppercase;
     }
     .tel-number{
@@ -847,7 +888,8 @@
         text-decoration: none;
         font-size: 26px;
         font-weight: bold;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
     }
     .tel-number:hover{
         color: #f3bed0;
@@ -859,7 +901,8 @@
     .contact{
         font-size: 14px;
         font-weight: bold;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         padding: 15px 40px;
         background-color: #31BA45;
         text-align: center;
@@ -882,7 +925,8 @@
     }
     .testimonial {
     text-align: center;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
     color: #777777;
     }
@@ -913,14 +957,16 @@
     .author span{
         font-size: 14px;
         font-weight: bold;
-        font-family: 'Black Han Sans', sans-serif; 
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif; 
         color: #9fd7ef;
         text-transform: uppercase;
     }
     .author p{
         font-size: 14px;
         font-weight: bold;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         color: #747272
     }
     .partner-logo{
@@ -957,7 +1003,8 @@
     .dream-text p{
         text-align: center;
         font-size: 14px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         color: #dedede;
         padding-top: 20px;
     }
@@ -979,7 +1026,8 @@
     .pop-col span{
         font-size: 16px;
         font-weight: bold;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         color: #ffffff;
         text-transform: uppercase;
     }
@@ -993,7 +1041,8 @@
         margin-bottom: 20px;
         text-transform: uppercase;
         font-size: 13px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         color: #dedede;
         display: flex;
     }
@@ -1007,7 +1056,8 @@
     .max-award {
         padding-left: 30px;
         font-size: 14px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
     }
     .blog-vl{
     color: #777777;
@@ -1026,7 +1076,8 @@
         text-decoration: underline;
         text-transform: uppercase;
         font-size: 13px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         color: #9fd7ef;
         font-weight: bold;
     }
@@ -1163,13 +1214,15 @@
     }
     .progress .text {
         font-size: 9px;
-        font-family: 'Black Han Sans', sans-serif; 
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif; 
         transform: rotate(180deg)translate(-40px, -10px);
     }
     .progress .value {
         transform: rotate(180deg)translate(-40px, -10px);
         font-size: 9px;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         fill: #31BA45;
     }
     .noselect {
@@ -1187,3 +1240,203 @@
         float: none; /* Added */
         margin-bottom: 10px; /* Added */
 }
+
+  h1 {
+    text-align:center;
+  }
+  .container {
+    width:90%;
+    margin:0 auto;
+  }
+  input[type="radio"] {
+      display:none;
+  }
+  label {
+    width:15%;
+    float:left;
+    text-align:center;
+    background:#ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color:#222222;
+    padding:0.5%;
+    margin:0.5%;
+    margin-bottom:30px;
+    cursor:pointer;
+  }
+  input[type="radio"][id="korean"]:checked + label {
+    background:#6666ff;
+  }
+  input[type="radio"][id="korean"]:checked ~ .english, input[type="radio"][id="korean"]:checked ~ .math,input[type="radio"][id="korean"]:checked ~ .social,input[type="radio"][id="korean"]:checked ~ .science {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+  input[type="radio"][id="english"]:checked + label {
+    background:#ff4466;
+  }
+  input[type="radio"][id="english"]:checked ~ .korean, input[type="radio"][id="english"]:checked ~ .math, input[type="radio"][id="english"]:checked ~ .social, input[type="radio"][id="english"]:checked ~ .science {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+
+  input[type="radio"][id="math"]:checked + label {
+    background:#66dd99;
+  }
+  input[type="radio"][id="math"]:checked ~ .korean, input[type="radio"][id="math"]:checked ~ .english, input[type="radio"][id="math"]:checked ~ .social, input[type="radio"][id="math"]:checked ~ .science {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+
+  input[type="radio"][id="social"]:checked + label {
+    background:black;
+  }
+  input[type="radio"][id="social"]:checked ~ .korean, input[type="radio"][id="social"]:checked ~ .english, input[type="radio"][id="social"]:checked ~ .math, input[type="radio"][id="social"]:checked ~ .science {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+
+  input[type="radio"][id="science"]:checked + label {
+    background:gold;
+  }
+  input[type="radio"][id="science"]:checked ~ .korean, input[type="radio"][id="science"]:checked ~ .english, input[type="radio"][id="science"]:checked ~ .math, input[type="radio"][id="science"]:checked ~ .social {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+  
+  .tile {
+    min-width: 30%;
+    height: 300px;
+    max-width: 100%;
+    float:left;
+    transition:all ease-out 1s;
+    margin:0.5%;
+    padding:0.5%;
+  }
+  .math {
+    background:#66dd99;
+  }
+  .korean {
+    background:#6666ff;
+  }
+  .english {
+    background:#ff4466;
+    background-image: url('../image/max-image/post-card-6.jpg');
+    background-size: cover;
+  }
+
+  .social{
+      background: black;
+  }
+
+  .science{
+      background: gold;
+  }
+
+  .science1{
+    background-image: url('../image/max-image/science1.png');
+    background-size: cover;
+  }
+
+  .science2{
+    background-image: url('../image/max-image/science2.jpg');
+    background-size: cover;
+  }
+
+  .korean1{
+    background-image: url('../image/max-image/korean1.jpg');
+    background-size: cover;
+  }
+
+  .korean2{
+    background-image: url('../image/max-image/korean2.jpg');
+    background-size: cover;
+  }
+
+  .korean3{
+    background-image: url('../image/max-image/korean3.jpg');
+    background-size: cover;
+  }
+
+  .korean4{
+    background-image: url('../image/max-image/korean4.jpg');
+    background-size: cover;
+  }
+
+  .korean5{
+    background-image: url('../image/max-image/korean5.jpg');
+    background-size: cover;
+  }
+
+  .english1{
+    background-image: url('../image/max-image/english1.jpg');
+    background-size: cover;
+  }
+
+  .english2{
+    background-image: url('../image/max-image/english2.jpg');
+    background-size: cover;
+  }
+
+  .english3{
+    background-image: url('../image/max-image/english3.jpg');
+    background-size: cover;
+  }
+
+  .english4{
+    background-image: url('../image/max-image/english4.jpg');
+    background-size: cover;
+  }
+
+  .english5{
+    background-image: url('../image/max-image/english5.jpeg');
+    background-size: cover;
+  }
+
+  .social1{
+    background-image: url('../image/max-image/social1.jpg');
+    background-size: cover;
+  }
+
+  .social2{
+    background-image: url('../image/max-image/social2.jpg');
+    background-size: cover;
+  }
+
+  .social3{
+    background-image: url('../image/max-image/social3.jpg');
+    background-size: cover;
+  }
+
+  .math1{
+    background-image: url('../image/max-image/math1.jpg');
+    background-size: cover;
+  }
+
+  .math2{
+    background-image: url('../image/max-image/math2.jpg');
+    background-size: cover;
+  }
+
+  .math3{
+    background-image: url('../image/max-image/math3.jpg');
+    background-size: cover;
+  }
+
+  .math4{
+    background-image: url('../image/max-image/math4.jpg');
+    background-size: cover;
+  }

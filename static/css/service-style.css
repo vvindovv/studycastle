@@ -20,7 +20,7 @@
     text-transform: uppercase;
     color: #ececec;
     font-weight: bold;
-    font-family: 'Roboto Slab', serif;
+    
     font-size: 32px;
 }
 .page-linker {
@@ -78,13 +78,13 @@ font-size: 13px;
 }
 .why-row-padd h3 {
     font-size: 16px;
-    font-family: 'Roboto Slab', serif;
+    
     font-weight: bold;
     color: #232323;
 }
 .why-row-padd-1 h3 {
     font-size: 16px;
-    font-family: 'Roboto Slab', serif;
+    
     font-weight: bold;
     color: #232323;
 }
@@ -106,13 +106,13 @@ font-size: 13px;
 }
 .why-col-padd a{
     font-size: 13px;
-    font-family: 'Roboto Slab', serif;
+    
     color: #f65aa7;
 
 }
 .why-col-padd-1 a{
     font-size: 13px;
-    font-family: 'Roboto Slab', serif;
+    
     color: #f65aa7;
 }
 .overlay-expand{
@@ -200,7 +200,7 @@ font-size: 13px;
     margin: 20px 0;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'Roboto Slab', serif;
+    
 
 }
 .make-text p {
@@ -228,7 +228,7 @@ font-size: 13px;
 .contact-con h2 {
 font-size: 32px;
 font-weight: bold;
-font-family: 'Roboto Slab', serif;
+
 text-transform: uppercase;
 }
 .tel-number{
@@ -236,7 +236,7 @@ text-transform: uppercase;
     text-decoration: none;
     font-size: 26px;
     font-weight: bold;
-    font-family: 'Roboto Slab', serif;
+    
 }
 .tel-number:hover{
     color: #f3bed0;
@@ -366,7 +366,7 @@ background-color: #232323!important;
 .author span{
     font-size: 14px;
     font-weight: bold;
-    font-family: 'Roboto Slab', serif; 
+     
     color: #9fd7ef;
     text-transform: uppercase;
 }
@@ -407,7 +407,7 @@ background-color: #232323!important;
  text-transform: uppercase;
  font-size: 24px;
  font-weight: bold;
- font-family: 'Roboto Slab', serif; 
+  
  padding-top: 30px;
  padding-bottom: 40px;
  color: #ffffff;

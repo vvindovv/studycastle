@@ -13,7 +13,7 @@
 .row-spc{
 
     margin: 0 auto!important;
-    font-family: 'Roboto Slab', serif;
+    
     font-size: 18px;
    
 }
@@ -67,7 +67,7 @@ background-color: white;
     }
 .nav-list .menu {
     color: #333333;
-    font-family: 'Roboto Slab', serif;
+    
     font-size: 13px;
     line-height: 26px;
     padding: 0 20px;
@@ -141,7 +141,7 @@ background-color: white;
 .pop-col span{
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Roboto Slab', serif; 
+     
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -178,7 +178,7 @@ background-color: white;
 .max-award{
 padding-left: 30px;
     font-size: 14px;
-    font-family: 'Roboto Slab', serif; 
+     
 }
 .blog-vl{
 color: #777777;
@@ -197,7 +197,7 @@ margin: 0 5px;
     text-decoration: underline;
     text-transform: uppercase;
     font-size: 13px;
-    font-family: 'Roboto Slab', serif; 
+     
     color: #9fd7ef;
     font-weight: bold;
 }
@@ -233,7 +233,7 @@ margin: 0 5px;
     text-transform: uppercase;
     color: #ececec;
     font-weight: bold;
-    font-family: 'Roboto Slab', serif;
+    
     font-size: 32px;
 }
 .page-linker {
@@ -281,7 +281,7 @@ font-size: 13px;
     padding: 20px 0;
     text-transform: uppercase;
     color: #232323;
-    font-family: 'Roboto Slab', serif;
+    
     font-size: 28px;
 }
 @media(max-width:576px){
@@ -336,7 +336,7 @@ font-size: 13px;
 padding-bottom: 10px;
 }
 .our-header span{
-    font-family: 'Roboto Slab', serif;
+    
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
@@ -530,7 +530,7 @@ float: right;
 .comment-container span {
     text-transform: uppercase;
     font-size: 18px;
-    font-family: 'Roboto Slab', serif;
+    
 }
 .comment-container hr{
     border: 2px solid #f65aa7;
@@ -588,7 +588,7 @@ float: right;
 
 }
 .comment-text span {
-    font-family: 'Roboto Slab', serif;
+    
     font-size:13px;
     color: #000000;
 }
