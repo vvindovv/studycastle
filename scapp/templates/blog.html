@@ -38,29 +38,30 @@
     </div>
   </div>
   <!--menu-->
-  <nav class="navbar fixed-top navbar-light" style="background-color: #ffffff;">
-    <div class="main-container nav-bg-color">
-      <div class="inside-container nav-contain">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-          <a href="http://127.0.0.1:8000"><img src="../../static/image/logos/Logo 4.png" class="img-fluid" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav nav-list ml-auto">
-              <a class="menu" href="http://127.0.0.1:8000">HOME</a>
-              <a class="menu" href="http://127.0.0.1:8000/services">소개</a>
-              <a class="menu" href="http://127.0.0.1:8000/contact">커뮤니티</a>
-              <a class="menu" href="http://127.0.0.1:8000/blog-single">추천</a>
-              <a class="menu" href="http://127.0.0.1:8000/blog/">리뷰</a>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle menu" href="#" id="navbardrop" style="font-size: 20px"
-                  data-toggle="dropdown">My Page</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">정보게시판</a>
-                  <a class="dropdown-item" href="#">자유게시판</a>
-
+  <body>
+    <nav class="navbar fixed-top navbar-light" style="background-color: #ffffff;">
+      <div class="main-container nav-bg-color">
+        <div class="inside-container nav-contain">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <a href="{% url 'home' %}"><img src="../../static/image/logos/Logo 4.png" class="img-fluid" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav nav-list ml-auto">
+                <a class="menu" href="{% url 'home' %}">HOME</a>
+                <a class="menu" href="{% url 'services' %}">소개</a>
+                <a class="menu" href="{% url 'contact' %}">커뮤니티</a>
+                <a class="menu" href="{% url 'blogsingle' %}">추천</a>
+                <a class="menu" href="{% url 'blog' %}">리뷰</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle menu" href="#" id="navbardrop" style="font-size: 20px"
+                    data-toggle="dropdown">My Page</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">정보게시판</a>
+                    <a class="dropdown-item" href="#">자유게시판</a>
+  
                 </div>
               </li>
               <span class="menu last-spc color-line"> | </span>
@@ -147,7 +148,7 @@
                       knows your name.</p>
 
                     <div class="rd-btn">
-                      <button class="read-more" onclick="location.href = 'http://127.0.0.1:8000/blog-single' "> read
+                      <button class="read-more" onclick="location.href = '{% url 'blogsingle' %}' "> read
                         more</button>
                     </div>
                   </div>
@@ -178,7 +179,7 @@
                       since the day they was born your name.</p>
 
                     <div class="rd-btn">
-                      <button class="read-more" onclick="location.href = 'http://127.0.0.1:8000/blog-single' "> read
+                      <button class="read-more" onclick="location.href = '{% url 'blogsingle' %}' "> read
                         more</button>
                     </div>
                   </div>
@@ -209,7 +210,7 @@
                       knows your name.</p>
 
                     <div class="rd-btn">
-                      <button class="read-more" onclick="location.href = 'http://127.0.0.1:8000/blog-single' "> read
+                      <button class="read-more" onclick="location.href = '{% url 'blogsingle' %}' "> read
                         more</button>
                     </div>
                   </div>
@@ -281,15 +282,15 @@
     <nav class="pagin-nr">
       <ul class="pagination  justify-content-center">
         <li class="page-item  arr-lf-rt">
-          <a class="page-link" href="http://127.0.0.1:8000/blog2" tabindex="-1"><i class="fas fa-arrow-left"></i> </a>
+          <a class="page-link" href="{% url 'blog' %}" tabindex="-1"><i class="fas fa-arrow-left"></i> </a>
         </li>
-        <li class="page-item"><a class="page-link" href="http://127.0.0.1:8000/blog2">01</a></li>
+        <li class="page-item"><a class="page-link" href="{% url 'blog' %}">01</a></li>
         <li class="page-item arr-lf-rt">
-          <a class="page-link" href="http://127.0.0.1:8000/blog">02 </a>
+          <a class="page-link" href="{% url 'blog2' %}">02 </a>
         </li>
-        <li class="page-item"><a class="page-link" href="http://127.0.0.1:8000/blog3">03</a></li>
+        <li class="page-item"><a class="page-link" href="{% url 'blog3' %}">03</a></li>
         <li class="page-item arr-lf-rt">
-          <a class="page-link" href="http://127.0.0.1:8000/blog3"><i class="fas fa-arrow-right"></i></a>
+          <a class="page-link" href="{% url 'blog3' %}"><i class="fas fa-arrow-right"></i></a>
         </li>
       </ul>
     </nav>

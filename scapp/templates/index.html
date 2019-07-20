@@ -28,18 +28,18 @@
     <div class="main-container nav-bg-color">
       <div class="inside-container nav-contain">
         <nav class="navbar navbar-expand-lg navbar-light ">
-          <a href="http://127.0.0.1:8000"><img src="../../static/image/logos/Logo 4.png" class="img-fluid" alt=""></a>
+          <a href="{% url 'home' %}"><img src="../../static/image/logos/Logo 4.png" class="img-fluid" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav nav-list ml-auto">
-              <a class="menu" href="http://127.0.0.1:8000">HOME</a>
-              <a class="menu" href="http://127.0.0.1:8000/services">소개</a>
-              <a class="menu" href="http://127.0.0.1:8000/contact">커뮤니티</a>
-              <a class="menu" href="http://127.0.0.1:8000/blog-single">추천</a>
-              <a class="menu" href="http://127.0.0.1:8000/blog/">리뷰</a>
+              <a class="menu" href="{% url 'home' %}">HOME</a>
+              <a class="menu" href="{% url 'services' %}">소개</a>
+              <a class="menu" href="{% url 'contact' %}">커뮤니티</a>
+              <a class="menu" href="{% url 'blogsingle' %}">추천</a>
+              <a class="menu" href="{% url 'blog' %}">리뷰</a>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle menu" href="#" id="navbardrop" style="font-size: 20px"
                   data-toggle="dropdown">My Page</a>
@@ -72,8 +72,8 @@
                   <h1>조선대학교 멋쟁이 사자처럼 <span class="bs-card"> 'STUDYCASTLE'</span></h1>
                   <p>STUDYCASTLE <br> STUDYCASTLE </p>
                   <div class="butns">
-                    <button class="about-btn">about us </button>
-                    <button class="work-btn">our work</button>
+                    <button class="read-more" onclick = "location.href = '{% url 'services' %}' ">about us </button>
+                    <button class="read-more" onclick = "location.href = '{% url 'services' %}' ">our work</button>
                   </div>
                 </div>
               </div>
@@ -88,8 +88,8 @@
                   <h1>조선대학교 멋쟁이 사자처럼 <span class="bs-card"> 'STUDYCASTLE'</span></h1>
                   <p>STUDYCASTLE <br> STUDYCASTLE </p>
                   <div class="butns">
-                    <button class="about-btn">about us </button>
-                    <button class="work-btn">our work</button>
+                    <button class="read-more" onclick = "location.href = '{% url 'services' %}' ">about us </button>
+                    <button class="read-more" onclick = "location.href = '{% url 'services' %}' ">our work</button>
                   </div>
                 </div>
               </div>

@@ -24,4 +24,6 @@ urlpatterns = [
     path('contact/',scapp.views.contact, name="contact"),
     path('services/',scapp.views.services, name="services"),
     path('blog-single/',scapp.views.blogsingle, name="blogsingle"),
+    path('blog2/',scapp.views.blog2, name="blog2"),
+    path('blog3/',scapp.views.blog3, name="blog3"),
 ]

@@ -16,3 +16,9 @@ def services(request):
 
 def blogsingle(request):
     return render(request, 'blog-single.html')
+
+def blog2(request):
+    return render(request, 'blog2.html')
+
+def blog3(request):
+    return render(request, 'blog3.html')
