@@ -26,4 +26,6 @@ urlpatterns = [
     path('blog-single/',scapp.views.blogsingle, name="blogsingle"),
     path('blog2/',scapp.views.blog2, name="blog2"),
     path('blog3/',scapp.views.blog3, name="blog3"),
+    path('comunity1/',scapp.views.comunity1, name="comunity1"),
+    path('comunity2/',scapp.views.comunity2, name="comunity2"),
 ]
