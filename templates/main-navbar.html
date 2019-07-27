@@ -1,0 +1,50 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<body>
+    <nav class="navbar fixed-top navbar-light" style="background-color: #ffffff;">
+        <div class="main-container nav-bg-color">
+            <div class="inside-container nav-contain">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a href="{% url 'home' %}"><img src="../../static/image/logos/Logo 4.png" class="img-fluid"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav nav-list ml-auto">
+                            <a class="menu" href="{% url 'home' %}">HOME</a>
+                            <a class="menu" href="{% url 'services' %}">소개</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle menu" href="{% url 'board:index' %}" id="navbardrop"
+                                    style="font-size: 20px;" data-toggle="dropdown">커뮤니티</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="{% url 'board:index' %}">정보게시판</a>
+                                    <a class="dropdown-item" href="{% url 'freeboard:index' %}">자유게시판</a>
+
+                                </div>
+                            </li>
+
+                            <a class="menu" href="{% url 'blogsingle' %}">추천</a>
+                            <a class="menu" href="{% url 'blog' %}">리뷰</a>
+                            <a class="menu" href="{% url 'user:profile' %}">마이페이지</a>
+                            <span class="menu last-spc color-line"> | </span>
+                            <a class="menu icon-color last-spc" href="{% url 'user:login' %}"><i
+                                    class="fas fa-user-plus"></i></a>
+                            <a class="menu icon-color  last-spc" href="{% url 'user:logout' %}"><i
+                                    class="fas fa-user-alt-slash"></i></a>
+                        </div>
+                    </div>
+                </nav>
+    </nav>
+    </div>
+    </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>
