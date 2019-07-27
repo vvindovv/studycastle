@@ -1,6 +1,6 @@
 {% extends 'board/navbar.html' %}
 {% block title %}MY PAGE{% endblock %}
-<div class="container">
+
     {% block content %}
     {% if user.is_authenticated %}
     <div class="row" style="margin:100px auto;">
@@ -9,7 +9,7 @@
                 <div class="card-header">
                     <h5>MY PAGE</h5>
                 </div>
-                <div class="card-body text-danger">
+                <div class="card-body">
                    
                     <p class="card-text" style="margin-bottom: 0;">      
                         <p>{{  user.username  }} 님이 접속중입니다.</p>

@@ -1,12 +1,3 @@
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-
-  color: white;
-  text-align: center;
-}
 
 body {
     margin: auto;
@@ -42,9 +33,9 @@ body {
 }
 nav{
   width: 100%;
-  position: fixed;
+  position: flex;
   top:50px;
-  text-align:center;
+  text-align:left;
 }
 nav a{
   font-family: 'Oswald', sans-serif;
