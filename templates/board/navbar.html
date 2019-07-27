@@ -51,15 +51,16 @@
       </div>
     </div>
   </nav>
-  <div class="back" >정보게시판</div>
+  <div class="back" ></div>
 <nav>
 
   <a href="{% url 'board:index' %}" id="navbardrop"
-      style="font-size: 20px;" data-toggle="dropdown">자유게시판</a>
+      style="font-size: 20px;" data-toggle="dropdown">정보게시판</a>
   <a href="{% url 'board:write' %}">글쓰기</a>
   <a>{{ request.user.username }} 님 접속 중</a>
   <a href="{% url 'user:logout' %}">로그아웃</a>
   <a href="{% url 'user:profile' %}">마이페이지</a>
+  <a href="{% url 'freeboard:index' %}">자유게시판</a>
     {% if request.user.is_authenticated %}
     {% else %}
   <a href="{% url 'user:login' %}">로그인</a>
