@@ -20,8 +20,8 @@ $('.scren-owl').owlCarousel({
   autoplayTimeout:9000,
   margin:50,
   responsiveClass:true,
- 
- responsive:{
+
+responsive:{
       0:{
           items:1,
           nav:false,

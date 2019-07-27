@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'scapp.apps.ScappConfig',
+    'user.apps.UserConfig',
+    'board.apps.BoardConfig',
+    'freeboard.apps.FreeboardConfig',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +132,17 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'scproject','static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
+
+# 로그인이 되어있지 않은 경우 로그인 페이지로 리다이렉트하는 url
+LOGIN_URL = '/user/login/'
+
+# 로그인 시 리다이렉트할 url
+LOGIN_REDIRECT_URL = "/"
+
+# 로그아웃 후 리다이렉트할 url
+LOGOUT_REDIRECT_URL = "/"
+
+# 세션 유효기간 설정 (초단위)
+SESSION_COOKIE_AGE = 60 * 60
+
+AUTH_USER_MODEL = 'user.CustomUser'

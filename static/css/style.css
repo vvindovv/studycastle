@@ -23,7 +23,7 @@
 .row-spc{
     margin: 0 auto!important;
     font-family: 'Noto Sans KR', sans-serif;
-          font-family: 'Noto Sans', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     
     }
@@ -78,7 +78,7 @@ i:hover{
         
     }
     .nav-list .menu {
-        color: #333333;
+        color: black;
         font-family: 'Noto Sans KR', sans-serif;
         font-family: 'Noto Sans', sans-serif;
         font-weight: bold;
@@ -90,9 +90,11 @@ i:hover{
     .nav-list .menu:hover {
         color: #31BA45;
     }
-    
+    .nav-link .dropdown-togle .menu{
+        color: #31BA45;
+    }
     .color-line{
-        color: #999999!important;
+        color: #080808!important;
     }
     .last-spc{
         padding: 0 10px;
@@ -225,7 +227,7 @@ i:hover{
         margin-top: 45px;
     }
     .about-btn{  
-        color: #333333;
+        color: black;
         border-radius: 8px;
         margin: 20px;
         padding: 15px 40px;
@@ -756,7 +758,25 @@ i:hover{
 
     .navbardrop
     {
-        color: #000;
+        color: #7ad691;
+    }
+
+    .navbardrop:hover
+    {
+        color: #7ad691;
+    }s
+
+
+    .dropdown-menu a{
+        color: black !important;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: bold;
+        font-size: px;
+    }
+
+    .dropdown-menu a:hover{
+        background-color:#7ad691;
     }
 
     .over-image span{
@@ -1232,7 +1252,7 @@ i:hover{
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-       cursor: default;
+        cursor: default;
     }
 
 .card {
@@ -1332,6 +1352,7 @@ i:hover{
   .korean {
     background:#6666ff;
   }
+
   .english {
     background:#ff4466;
     background-image: url('../image/max-image/post-card-6.jpg');

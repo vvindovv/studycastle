@@ -22,9 +22,3 @@ def blog2(request):
 
 def blog3(request):
     return render(request, 'blog3.html')
-
-def comunity1(request):
-    return render(request, 'comunity1.html')
-
-def comunity2(request):
-    return render(request, 'comunity1.html')

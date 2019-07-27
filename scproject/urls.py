@@ -14,8 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 import scapp.views
+import user.views
+import board.views
+import freeboard.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,8 +27,9 @@ urlpatterns = [
     path('contact/',scapp.views.contact, name="contact"),
     path('services/',scapp.views.services, name="services"),
     path('blog-single/',scapp.views.blogsingle, name="blogsingle"),
-    path('blog2/',scapp.views.blog2, name="blog2"),
-    path('blog3/',scapp.views.blog3, name="blog3"),
-    path('comunity1/',scapp.views.comunity1, name="comunity1"),
-    path('comunity2/',scapp.views.comunity2, name="comunity2"),
+    path('user/', include('user.urls')),
+    path('board/', include('board.urls')),
+    path('freeboard/', include('freeboard.urls')),
+    path('accounts/', include('user.urls')),
+	path('accounts/', include('django.contrib.auth.urls')),
 ]

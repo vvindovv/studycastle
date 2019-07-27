@@ -1,0 +1,57 @@
+{% load static %}
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>자유 게시판</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/css/freeboard.css" type="text/css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="{% url 'home' %}">StudyCastle</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        {% if request.user.is_authenticated %}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle menu" href="{% url 'board:index' %}" id="navbardrop"
+              style="font-size: 20px;" data-toggle="dropdown">게시판</a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="{% url 'board:index' %}">정보게시판</a>
+              <a class="dropdown-item" href="{% url 'freeboard:index' %}">자유게시판</a>
+
+          </div>
+      </li>
+
+
+        <a class="nav-item nav-link active" href="{% url 'freeboard:write' %}">글 쓰기</a>
+        <a class="nav-item nav-link active">{{ request.user.username }} 님 접속 중</a>
+        <a class="nav-item nav-link active" href="{% url 'user:logout' %}">로그아웃</a>
+        <a class="nav-item nav-link active" href="{% url 'user:profile' %}">mypage</a>
+        {% else %}
+        <a class="nav-item nav-link active" href="{% url 'user:login' %}">로그인</a>
+        <a class="nav-item nav-link active" href="{% url 'user:join' %}">회원가입</a>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+  {% block content %}
+  {% endblock %}
+</body>
+
+</html>
