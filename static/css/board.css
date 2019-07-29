@@ -35,7 +35,7 @@ nav{
   width: 100%;
   position: flex;
   top:50px;
-  text-align:left;
+  text-align:center;
 }
 nav a{
   font-family: 'Oswald', sans-serif;
@@ -102,3 +102,4 @@ nav a:hover:before{
     animation:show .2s #{$i*0.1+1}s ease 1 both;
   }
 }
+

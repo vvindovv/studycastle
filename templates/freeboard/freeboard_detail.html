@@ -1,6 +1,6 @@
 {% extends 'freeboard/freenavbar.html' %}
 {% block content %}
-<div class="container">
+<div class="container" style="background-color: rgba(245, 245, 245, 0);">
   <div class="row">
     <div class="col-sm-12" style="margin-top:100px;">
       <h3>{{ freeboard.title }}</h3>
@@ -10,7 +10,7 @@
       <br>
 
         {% if freeboard.username == request.user.username %}
-          <div class="btn-group">
+          <div class="btn-group" style="background-color: rgba(245, 245, 245, 0);">
             <a href="{% url 'freeboard:update' pk=freeboard.id %}">
               <button class="btn btn-warning">수정</button>
             </a>

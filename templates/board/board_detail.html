@@ -1,22 +1,23 @@
 {% extends 'board/navbar.html' %}
 {% block content %}
 
-<div class="container">
+<div class="container" >
   <div class="row">
-    <div class="col-sm-12" style="margin-top:100px;">
+    <div class="col-sm-12" style="margin-top:100px; ">
       <h3>{{ board.title }}</h3>
-      <p>작성자 {{ board.username }}</p>
-      <pre>{{ board.content }}</pre>
+      <h7>작성자: {{ board.username }}</h7>
+      <br>
+      <h4><pre>{{ board.content }}</pre></h4>
       <footer class="blockquote-footer"><cite title="Source Title">{{ board.created_at }}</cite></footer>
       <br>
 
         {% if board.username == request.user.username %}
-          <div class="btn-group">
+          <div class="btn-group" >
             <a href="{% url 'board:update' pk=board.id %}">
-              <button class="btn btn-warning">수정</button>
+              <button class="btn" style="background-color: rgba(245, 245, 245, 0);">수정</button>
             </a>
             <a href="{% url 'board:delete' pk=board.id %}">
-              <button class="btn btn-danger">삭제</button>
+              <button class="btn" style="background-color: rgba(245, 245, 245, 0);">삭제</button>
             </a>
           </div>
         {% endif %}
@@ -28,33 +29,33 @@
             <input type="hidden" name="username" value="{{ request.user.username }}">
             <input type="hidden" name="board" value="{{ board.id }}" required>
             <div class="btn-group">
-              <select class="form-control" name="like_point" required>
-                  <option value="">추천</option>
+              <select class="form-control" name="like_point" required style="background-color: rgba(245, 245, 245, 0);">
+                  <option value="">별 개수</option>
                   <option value="5" {% if point == 5 %}selected{% endif %}>★★★★★</option>
                   <option value="4" {% if point == 4 %}selected{% endif %}>★★★★☆</option>
                   <option value="3" {% if point == 3 %}selected{% endif %}>★★★☆☆</option>
                   <option value="2" {% if point == 2 %}selected{% endif %}>★★☆☆☆</option>
                   <option value="1" {% if point == 1 %}selected{% endif %}>★☆☆☆☆</option>
               </select>
-              <button type="submit" class="btn btn-primary">점수주기</button>
+              <button type="submit" class="btn" style="background-color: rgba(245, 245, 245, 0);">별 주기</button>
             </div>
         </form>
 
       <hr>
 
       <form method="post" action="{% url 'board:comment-write' board_id=board.id %}">
-          <div class="card mb-3">
+          <div class="card" style="background-color: rgba(245, 245, 245, 0);">
               {% csrf_token %}
               <div class="card-header">
                   <button type="button" class="close" aria-label="Close">
                     <span aria-hidden="true">
-                        <input type="submit" class="btn btn-success btn-sm" value="댓글 등록">
+                        <input type="submit" class="btn btn-sm text-dark" style="background-color: rgba(245, 245, 245, 0.9);" value="댓글 등록">
                     </span>
                   </button>
               </div>
               <input type="hidden" name="username" value="{{ request.user.username }}">
               <input type="hidden" name="board" value="{{ board.id }}">
-              <div class="card-body">
+              <div class="card-body" style="background-color: rgba(245, 245, 245, 0);">
                 <textarea class="form-control" id="content" name="content" rows="2" required></textarea>
                   {% for message in messages %}
                     <p>{{ message.message }}</p>
@@ -66,7 +67,7 @@
       <hr>
 
       {% for comment in comments %}
-      <div class="card bg-light mb-3">
+      <div class="card mb-3" style="background-color: rgba(245, 245, 245, 0.4);">
           <div class="card-header">
               <b>{{ comment.username }}</b>
               {% if comment.username == request.user.username %}
