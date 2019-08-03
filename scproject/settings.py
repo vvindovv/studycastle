@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'user.apps.UserConfig',
     'board.apps.BoardConfig',
     'freeboard.apps.FreeboardConfig',
+    'review.apps.ReviewConfig',
 ]
 
 MIDDLEWARE = [

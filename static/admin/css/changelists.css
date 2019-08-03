@@ -183,7 +183,7 @@
 #changelist-filter a:focus, #changelist-filter a:hover,
 #changelist-filter li.selected a:focus,
 #changelist-filter li.selected a:hover {
-    color: #036;
+    color: #000;;
 }
 
 /* DATE DRILLDOWN */
@@ -209,7 +209,7 @@
 
 .change-list ul.toplinks .date-back a:focus,
 .change-list ul.toplinks .date-back a:hover {
-    color: #036;
+    color: #000;;
 }
 
 /* PAGINATOR */
@@ -239,7 +239,7 @@
 
 .paginator a.showall:focus, .paginator a.showall:hover {
     background: none;
-    color: #036;
+    color: #000;;
 }
 
 .paginator .end {
@@ -255,7 +255,7 @@
 
 .paginator a:focus, .paginator a:hover {
     color: white;
-    background: #036;
+    background: #000;;
 }
 
 /* ACTIONS */

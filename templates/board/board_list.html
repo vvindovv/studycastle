@@ -7,10 +7,10 @@
         <div class="col-sm-12 text-dark">
             <div class="card border-0" style="background-color: rgba(245, 245, 245, 0.2);">
                 <div class="card-header"><h5>HOT</h5></div>
-                <div class="card-body text-dark border-0">
+                <div class="card-body border-0">
                     {% for board in hot_boards %}
                         <p class="card-text" style="margin-bottom: 0;">
-                            <a href="{% url 'board:detail' board.id %}">{{ board.title }} [{{ board.average_like }}]</a>
+                            <a href="{% url 'board:detail' board.id %}" class="text-dark">{{ board.title }}</a>
                         </p>
                     {% endfor %}
                 </div>
@@ -24,11 +24,11 @@
         <div class="col-sm-12 text-dark">
           <div class="card border-0" style="background-color: rgba(245, 245, 245, 0.2);">
               <div class="card-body">
-                  <h5 class="card-title text-dark"><a href="{% url 'board:detail' board.id %}">{{ board.title }}</a></h5>
+                  <h5 class="card-title"><a href="{% url 'board:detail' board.id %}" class="text-dark">{{ board.title }}</a></h5>
                 <h6 class="card-subtitle mb-2 text-muted">{{ board.created_at|date:"Y-m-d H:i:s" }}</h6>
-                <p class="card-text text-dark">
-                    <a href="{% url 'board:detail' board.id %}">{{ board.comments_count }} Comments</a> /
-                    <a href="{% url 'board:detail' board.id %}">{{ board.average_like|default_if_none:0 }} ♥</a>
+                <p class="card-text">
+                    <a href="{% url 'board:detail' board.id %}" class="text-dark">{{ board.comments_count }} Comments</a> /
+                    <a href="{% url 'board:detail' board.id %}" class="text-danger">{{ board.average_like|default_if_none:0 }} ♥</a>
                 </p>
               </div>
             </div>
@@ -39,7 +39,7 @@
     
     <div class="row">
         <nav aria-label="Page navigation example">
-          <ul class="pagination" > 
+          <ul class="pagination justify-content-center" > 
             {% if page_obj.has_previous %}
             <li class="page-item" >
               <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">

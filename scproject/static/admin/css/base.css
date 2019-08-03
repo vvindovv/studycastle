@@ -16,16 +16,16 @@ body {
 /* LINKS */
 
 a:link, a:visited {
-    color: #447e9b;
+    color: #000;
     text-decoration: none;
 }
 
 a:focus, a:hover {
-    color: #036;
+    color: #000;;
 }
 
 a:focus {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a img {
@@ -38,7 +38,7 @@ a.section:link, a.section:visited {
 }
 
 a.section:focus, a.section:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* GLOBAL DEFAULTS */
@@ -377,7 +377,7 @@ table thead th.sorted .sortoptions a.sortremove:after {
 
 table thead th.sorted .sortoptions a.sortremove:focus:after,
 table thead th.sorted .sortoptions a.sortremove:hover:after {
-    color: #447e9b;
+    color: #000;
 }
 
 table thead th.sorted .sortoptions a.sortremove:focus,
@@ -597,7 +597,7 @@ ul.errorlist li:first-child {
 
 ul.errorlist li a {
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 td ul.errorlist {
@@ -844,7 +844,7 @@ table#change-history tbody th {
 }
 
 #header a:focus , #header a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #branding {

@@ -19,6 +19,7 @@ import scapp.views
 import user.views
 import board.views
 import freeboard.views
+import review.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,4 +33,11 @@ urlpatterns = [
     path('freeboard/', include('freeboard.urls')),
     path('accounts/', include('user.urls')),
 	path('accounts/', include('django.contrib.auth.urls')),
+    path('review/', include('review.urls')),
+    path('blog2/',scapp.views.blog2, name="blog2"),
+    path('blog3/',scapp.views.blog3, name="blog3"),
+    path('blog4/',scapp.views.blog4, name="blog4"),
+    path('blog5/',scapp.views.blog5, name="blog5"),
+    path('blog6/',scapp.views.blog6, name="blog6"),
+
 ]

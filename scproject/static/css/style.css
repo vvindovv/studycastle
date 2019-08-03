@@ -1073,7 +1073,7 @@ i:hover{
         width: 95%!important;
     }
     .view-blog{
-        text-decoration: underline;
+        text-decoration: none;
         text-transform: uppercase;
         font-size: 13px;
         font-family: 'Noto Sans KR', sans-serif;

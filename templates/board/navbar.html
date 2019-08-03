@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>정보 게시판</title>
+  <title>REVIEW</title>
   <link rel="stylesheet" href="../../static/css/board.css" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -18,54 +18,53 @@
     crossorigin="anonymous"></script>
   
 </head>
-
+<style>
+    .page-link {
+      position: relative;
+      display: block;
+      padding: 0.5rem 0.75rem;
+      margin-left: -1px;
+      line-height: 1.25;
+      color: #ffffff;
+      background-color:rgba(245, 245, 245, 0.2);
+      border: none;
+    }
+    .page-item.disabled .page-link {
+      color: #ffffff;
+      pointer-events: none;
+      cursor: auto;
+      background-color: #CEFFCE;
+      border:none;
+    }
+    .page-item.active .page-link {
+      z-index: 1;
+      color: #fff;
+      background-color: #aaaaaa;
+      border-color: none;
+    }
+    .page-link:focus, .page-link:hover {
+      color: #fff;
+      text-decoration: none;
+      background-color:rgba(245, 245, 245, 0.2);
+      border-color: none;
+    }
+    
+    </style>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="{% url 'home' %}">StudyCastle</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        {% if request.user.is_authenticated %}
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle menu" href="{% url 'board:index' %}" id="navbardrop"
-              style="font-size: 20px;" data-toggle="dropdown">게시판</a>
-          <div class="dropdown-menu">
-              <a class="dropdown-item" href="{% url 'board:index' %}">정보게시판</a>
-              <a class="dropdown-item" href="{% url 'freeboard:index' %}">자유게시판</a>
-
-          </div>
-      </li>
-
-        <a class="nav-item nav-link active" href="{% url 'board:write' %}">글 쓰기</a>
-        <a class="nav-item nav-link active">{{ request.user.username }} 님 접속 중</a>
-        <a class="nav-item nav-link active" href="{% url 'user:logout' %}">로그아웃</a>
-        <a class="nav-item nav-link active" href="{% url 'user:profile' %}">mypage</a>
-        {% else %}
-        <a class="nav-item nav-link active" href="{% url 'user:login' %}">로그인</a>
-        <a class="nav-item nav-link active" href="{% url 'user:join' %}">회원가입</a>
-        {% endif %}
-      </div>
-    </div>
-  </nav>
-  <div class="back" ></div>
-<nav>
-
-  <a href="{% url 'board:index' %}">정보게시판</a>
-  <a href="{% url 'board:write' %}">글쓰기</a>
-  <a href="{% url 'freeboard:index' %}">자유게시판</a>
+    <div class="back"></div>
+  <nav> <div class="col-md-12 col-lg-12" style="margin:100px auto;">
+  <a href="{% url 'home' %}" class="text-dark">HOME</a>
+  <a href="{% url 'board:write' %}" class="text-dark">WRITE</a>
+  <a href="{% url 'freeboard:index' %}" class="text-dark">FREEBOARD</a>
     {% if request.user.is_authenticated %}
-    <a>{{ request.user.username }} 님 접속 중</a>
-    <a href="{% url 'user:logout' %}">로그아웃</a>
-    <a href="{% url 'user:profile' %}">마이페이지</a>
+    <a>{{ request.user.username }}접속 중</a>
+    <a href="{% url 'user:logout' %}" class="text-dark">LOGOUT</a>
+    <a href="{% url 'user:profile' %}" class="text-dark">PROFILE</a>
     {% else %}
-  <a href="{% url 'user:login' %}">로그인</a>
-  <a href="{% url 'user:join' %}">회원가입</a>
+  <a href="{% url 'user:login' %}" class="text-dark">LOGIN</a>
+  <a href="{% url 'user:join' %}" class="text-dark">SIGNUP</a>
   {% endif %}
-</nav>
+</div></nav>
   {% block content %}
   {% endblock %}
 </body>

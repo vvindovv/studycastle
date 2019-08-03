@@ -6,7 +6,7 @@
         <div class="col-sm-12">
             <div class="card border-0" style="background-color: rgba(245, 245, 245, 0);">
               <div class="card-header">게시글 작성</div>
-              <div class="card-body">
+              <div class="card-body" style="background-color: rgba(245, 245, 245, 0);">
                   <form method="post" action="{% url 'board:write' %}">
                       {% csrf_token %}
                       {% for field in form %}
