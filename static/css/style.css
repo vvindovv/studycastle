@@ -1,6 +1,6 @@
 .main-container {
     max-width: 1950px;
-    
+    width: 100%;
     margin: 0 auto;
     overflow: visible;
     }
@@ -62,6 +62,11 @@ i:hover{
         color: #31BA45;
         cursor: pointer;
     }
+    .nav-contain{
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 70px;
+        }
     
     .nav-bg-color{
     
@@ -71,15 +76,14 @@ i:hover{
 
 
     .navbar img{
-        width: 200px;
-        
+        width: 170px;
     }
     .nav-list .menu {
         color: black;
         font-family: 'Noto Sans KR', sans-serif;
         font-family: 'Noto Sans', sans-serif;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 17px;
         line-height: 10px;
         padding: 0 10px;
         text-decoration: none;        
@@ -360,12 +364,14 @@ i:hover{
     .rd-btn{
         margin: 38px auto;
         text-align: center;
+        outline:none;
     } 
     .read-more:hover{
         text-decoration: none;
         color: white;
         background-color: #23a042;
         cursor: pointer;
+        outline:none;
     }
     .promotion-bg{
         background-color: #f9f9f9;
@@ -1015,8 +1021,8 @@ i:hover{
         padding: 20px;
     }
     .foot-logo{
-        max-width: auto;
-        max-height: auto;
+        max-width: 200px;
+        max-height: 200px;
         margin-bottom: 0;
     }
     .foot-col-padd{
@@ -1318,7 +1324,7 @@ i:hover{
   }
 
   input[type="radio"][id="social"]:checked + label {
-    background:black;
+    background:rgb(67, 176, 240);
   }
   input[type="radio"][id="social"]:checked ~ .korean, input[type="radio"][id="social"]:checked ~ .english, input[type="radio"][id="social"]:checked ~ .math, input[type="radio"][id="social"]:checked ~ .science {
     width:0;

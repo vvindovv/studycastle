@@ -133,7 +133,7 @@ a.selector-chooseall, a.selector-clearall {
 
 a.active.selector-chooseall:focus, a.active.selector-clearall:focus,
 a.active.selector-chooseall:hover, a.active.selector-clearall:hover {
-    color: #000;
+    color: #447e9b;
 }
 
 a.active.selector-chooseall, a.active.selector-clearall {

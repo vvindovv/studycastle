@@ -25,9 +25,7 @@ SECRET_KEY = 'h4=_+-l1q&@0gnzg$yfy=_fo-#af5%%241i9=$1oyupg76pc^3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost',
-    '127.0.0.1',
-    '.elasticbeanstalk.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -147,5 +145,3 @@ LOGOUT_REDIRECT_URL = "/"
 
 # 세션 유효기간 설정 (초단위)
 SESSION_COOKIE_AGE = 60 * 60
-
-AUTH_USER_MODEL = 'user.CustomUser'

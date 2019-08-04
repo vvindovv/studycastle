@@ -20,7 +20,7 @@
                             <a class="menu" href="{% url 'services' %}">소개</a>
                             <li class="nav-item dropdown text-dark">
                                 <a class="nav-link dropdown-toggle menu text-dark" href="{% url 'board:index' %}" id="navbardrop"
-                                    style="font-size: 20px;" data-toggle="dropdown">커뮤니티</a>
+                                    style="font-size: 17px;" data-toggle="dropdown">커뮤니티</a>
                                 <div class="dropdown-menu text-dark">
                                     <a class="dropdown-item text-dark" href="{% url 'board:index' %}">정보게시판</a>
                                     <a class="dropdown-item text-dark" href="{% url 'freeboard:index' %}">자유게시판</a>
@@ -28,9 +28,9 @@
                                 </div>
                             </li>
 
-                            <a class="menu" href="{% url 'blogsingle' %}">추천</a>
+                            <a class="menu" href="{% url 'blog' %}">추천</a>
                             <a class="menu" href="{% url 'review:index' %}">리뷰</a>
-                            <a class="menu" href="{% url 'user:profile' %}">마이페이지</a>
+                            
                             <span class="menu last-spc color-line"> | </span>
                            
                             {% if request.user.is_authenticated %} 
