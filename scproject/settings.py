@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'user.apps.UserConfig',
     'board.apps.BoardConfig',
     'freeboard.apps.FreeboardConfig',
+    'review.apps.ReviewConfig',
 ]
 
 MIDDLEWARE = [
@@ -144,5 +145,3 @@ LOGOUT_REDIRECT_URL = "/"
 
 # 세션 유효기간 설정 (초단위)
 SESSION_COOKIE_AGE = 60 * 60
-
-AUTH_USER_MODEL = 'user.CustomUser'

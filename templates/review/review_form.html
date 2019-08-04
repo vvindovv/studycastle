@@ -1,12 +1,13 @@
-{% extends 'freeboard/freenavbar.html' %}
+{% extends 'review/reviewnavbar.html' %}
 {% block content %}
+
 <div class="container">
     <div class="row" style="margin-top:100px;">
         <div class="col-sm-12">
             <div class="card border-0" style="background-color: rgba(245, 245, 245, 0);">
-              <div class="card-header">게시글 작성</div>
-              <div class="card-body">
-                  <form method="post" action="{% url 'freeboard:write' %}" >
+              <div class="card-header">리뷰 작성</div>
+              <div class="card-body" style="background-color: rgba(245, 245, 245, 0);">
+                  <form method="post" action="{% url 'review:write' %}">
                       {% csrf_token %}
                       {% for field in form %}
                         <div class="form-group">
@@ -31,7 +32,7 @@
                             {% endfor %}
                         </div>
                       {% endfor %}
-                      <input class="btn btn-block" type="submit" value="저장">
+                      <input class="btn btn-block" style="background-color: rgba(245, 245, 245, 0.3);" type="submit" value="저장">
                   </form>
               </div>
             </div>

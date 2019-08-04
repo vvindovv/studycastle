@@ -22,3 +22,12 @@ def blog2(request):
 
 def blog3(request):
     return render(request, 'blog3.html')
+
+def blog4(request):
+    return render(request, 'blog3.html')
+
+def blog5(request):
+    return render(request, 'blog3.html')
+
+def blog6(request):
+    return render(request, 'blog3.html')

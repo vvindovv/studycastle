@@ -3,9 +3,9 @@
 <div class="container" style="max-width: 540px;">
     <div class="row" style="margin-top:20px;">
         <div class="col-sm-12">
-            <div class="card border-secondary">
+            <div class="card border-0" style="background-color: rgba(245, 245, 245, 0);">
               <div class="card-header">댓글 작성</div>
-              <div class="card-body">
+              <div class="card-body" style="background-color: rgba(245, 245, 245, 0);">
                   <form method="post" action="">
                       {% csrf_token %}
                       {% for field in form %}
@@ -15,13 +15,14 @@
                                    class="form-control {% if field.errors|length > 0 %}is-invalid{% endif %}"
                                    id="{{ field.id_for_label }}"
                                    name="{{ field.html_name }}"
-                                   value="{{ field.value|default_if_none:'' }}">
+                                   value="{{ field.value|default_if_none:'' }}"
+                                   style="background-color: rgba(245, 245, 245, 0);">
                             {% for error in field.errors %}
                                 <div class="invalid-feedback">{{ error }}</div>
                             {% endfor %}
                         </div>
                       {% endfor %}
-                      <button type="submit" class="btn btn-primary btn-lg btn-block">가입</button>
+                      <button type="submit" class="btn btn-block" style="background-color: rgba(245, 245, 245, 0.2);">가입</button>
                     </form>
               </div>
             </div>

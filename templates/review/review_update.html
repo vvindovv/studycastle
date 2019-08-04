@@ -1,12 +1,12 @@
-{% extends 'freeboard/freenavbar.html' %}
+{% extends 'review/reviewnavbar.html' %}
 {% block content %}
+
 <div class="container">
-    <div class="row" style="margin-top:100px;">
+    <div class="row" style="margin-top:20px;">
         <div class="col-sm-12">
             <div class="card border-0" style="background-color: rgba(245, 245, 245, 0);">
-              <div class="card-header">게시글 작성</div>
               <div class="card-body">
-                  <form method="post" action="{% url 'freeboard:write' %}" >
+                  <form method="post" action="{% url 'review:update' pk=review.id %}">
                       {% csrf_token %}
                       {% for field in form %}
                         <div class="form-group">
@@ -23,15 +23,15 @@
                                    class="form-control {% if field.errors|length > 0 %}is-invalid{% endif %}"
                                    id="{{ field.id_for_label }}"
                                    name="{{ field.html_name }}"
-                                   style="background-color: rgba(245, 245, 245, 0);"
-                                   value="{% if field.html_name == 'username' %}{{ request.user.username }}{% else %}{{ field.value|default_if_none:'' }}{% endif %}">
+                                   value="{% if field.html_name == 'username' %}{{ request.user.username }}{% else %}{{ field.value|default_if_none:'' }}{% endif %}" 
+                                   style="background-color: rgba(245, 245, 245, 0);">
                             {% endif %}
                             {% for error in field.errors %}
                                 <div class="invalid-feedback">{{ error }}</div>
                             {% endfor %}
                         </div>
                       {% endfor %}
-                      <input class="btn btn-block" type="submit" value="저장">
+                      <input class="btn btn-lg btn-block" style="background-color: rgba(245, 245, 245, 0);" type="submit" value="수정">
                   </form>
               </div>
             </div>
