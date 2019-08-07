@@ -7,10 +7,9 @@
       <div class="col-sm-12 text-dark">
         <div class="card border-0" style="background-color: rgba(245, 245, 245, 0.2);">
           <div class="card-body text-center">
-            <h5 class="card-title"><a href="{% url 'review:detail' review.id %}"
-                class=" text-dark">{{ review.title }}</a></h5>
-            <!-- <h6 class="card-text text-center"><a href="별점">{{review.star}}</a></h6> -->
-            <footer class="blockquote-footer"><cite title="Source Title">NANA</cite></footer>
+            <h5 class="card-title"> {{ review.title }}</a></h5>
+           <h6 class="card-text text-center">평점 : {{review.test}} {{review.result}}</h6>
+            <footer class="blockquote-footer"><cite title="Source Title">{{review.username}}</cite></footer>
             </blockquote>
             <a href="#" class="btn text-dark">자세히</a>
             {% if review.username == request.user.username %}

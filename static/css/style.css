@@ -1469,3 +1469,16 @@ i:hover{
     background-image: url('../image/max-image/math4.jpg');
     background-size: cover;
   }
+
+/* 디데이 */
+
+.d-day{
+    color: rgb(255, 8, 8);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 10px;
+    padding: 0 10px;
+    text-decoration: none;  
+}

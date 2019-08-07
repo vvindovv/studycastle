@@ -5,6 +5,7 @@ from . forms import ReviewForm
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from scproject import settings
+from django.db.models import Avg
 
 
 
@@ -30,6 +31,12 @@ class IndexView(generic.ListView):
         return context
     def get_queryset(self):
         return Review.objects.order_by('-created_at')\
+
+    # def test(self):
+    #self.result = self.volume + self.runningtime + self.fun
+    #self.result /= 3
+      
+
 
 # 게시글 작성
 class WriteView(LoginRequiredMixin, generic.CreateView):
@@ -84,3 +91,4 @@ def comment_write(request, review_id):
 
 
 
+    

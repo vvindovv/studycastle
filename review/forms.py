@@ -7,10 +7,14 @@ from django.utils.translation import gettext_lazy as _
 class ReviewForm(ModelForm):
     class Meta:
         model = Review
-        fields = ['title', 'content', 'username']
+        fields = ['title', 'content', 'username', 'volume', 'runningtime', 'fun']
+
         labels = {
             'title': _('제목'),
             'content': _('내용'),
+            'volume': _('전체 강좌의 수는 어떻나요?'),
+            'runningtime': _('강의 시간은 적당했나요?'),
+            'fun': _('강의가 얼마나 몰입됐나요?'),
         }
         help_text = {
             'title': _('제목을 입력해주세요.'),
@@ -24,11 +28,20 @@ class ReviewForm(ModelForm):
                 'max_length': _('내용은 500자 이하로 작성해주세요.')
             },
         }
+
+        
+
         widgets = {
             'username': forms.HiddenInput(),
             'content': forms.Textarea()
+            
         }
 
+    def __init__(self, *args, **kwargs):
+        super(ReviewForm, self).__init__(*args, **kwargs)
+        self.fields['volume'].widget.attrs['class'] = 'form-control'
+        self.fields['runningtime'].widget.attrs['class'] = 'form-control'
+        self.fields['fun'].widget.attrs['class'] = 'form-control'
 
 
 
