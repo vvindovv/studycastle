@@ -11,16 +11,16 @@ class Review(models.Model):
 
     
     STAR_CHOICES = {
-          ('1', '★'),
-          ('2', '★★'),
-          ('3', '★★★'),
-          ('4', '★★★★'),
-          ('5', '★★★★★'),
+          ('★', '★'),
+          ('★★', '★★'),
+          ('★★★', '★★★'),
+          ('★★★★', '★★★★'),
+          ('★★★★★', '★★★★★'),
         }
     volume = models.CharField(max_length=5, choices=STAR_CHOICES, default='★')
     runningtime = models.CharField(max_length=5, choices=STAR_CHOICES, default='★')
     fun = models.CharField(max_length=5,choices=STAR_CHOICES, default='★')
+    total = models.CharField(max_length=5,choices=STAR_CHOICES, default='★')
 
-    result = models.FloatField(default=0)
 
   

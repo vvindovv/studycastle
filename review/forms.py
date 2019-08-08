@@ -7,7 +7,7 @@ from django.utils.translation import gettext_lazy as _
 class ReviewForm(ModelForm):
     class Meta:
         model = Review
-        fields = ['title', 'content', 'username', 'volume', 'runningtime', 'fun']
+        fields = ['title', 'content', 'username', 'volume', 'runningtime', 'fun', 'total']
 
         labels = {
             'title': _('제목'),
@@ -15,6 +15,7 @@ class ReviewForm(ModelForm):
             'volume': _('전체 강좌의 수는 어떻나요?'),
             'runningtime': _('강의 시간은 적당했나요?'),
             'fun': _('강의가 얼마나 몰입됐나요?'),
+            'total': _('친구에게 얼마나 추천해주고 싶나요?'),
         }
         help_text = {
             'title': _('제목을 입력해주세요.'),
@@ -42,6 +43,7 @@ class ReviewForm(ModelForm):
         self.fields['volume'].widget.attrs['class'] = 'form-control'
         self.fields['runningtime'].widget.attrs['class'] = 'form-control'
         self.fields['fun'].widget.attrs['class'] = 'form-control'
+        self.fields['total'].widget.attrs['class'] = 'form-control'
 
 
 

@@ -5,7 +5,7 @@ from . forms import ReviewForm
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from scproject import settings
-from django.db.models import Avg
+
 
 
 
